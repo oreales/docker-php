@@ -48,5 +48,5 @@ jobs:
           build-args: |
             PHP_TAG=${{ github.event.inputs.from }}
           tags: |
-            ghcr.io/drpayyne/php-fpm:${{ github.event.inputs.to }}
-            ghcr.io/drpayyne/php-fpm:latest
+            ghcr.io/cvarela-usesi/php-fpm:${{ github.event.inputs.to }}
+            ghcr.io/cvarela-usesi/php-fpm:latest
