@@ -11,6 +11,18 @@ on:
         description: "PHP 7.3"
         default: '0'
         required: false
+      php72:
+        description: "PHP 7.2"
+        default: '0'
+        required: false
+      php71:
+        description: "PHP 7.1"
+        default: '0'
+        required: false
+      php70:
+        description: "PHP 7.0"
+        default: '0'
+        required: false
 
 jobs:
   php74:
