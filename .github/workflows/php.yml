@@ -36,7 +36,7 @@ jobs:
           platforms: linux/amd64,linux/arm64
           push: true
           tags: |
-            cvarela-usesi/php-multi-arch:7.4
+            gabriel0702usesi/php-multi-arch:7.4
             ghcr.io/cvarela-usesi/php-cli:7.4
             ghcr.io/cvarela-usesi/php-cli:latest
       -
@@ -47,7 +47,7 @@ jobs:
           platforms: linux/amd64,linux/arm64
           push: true
           tags: |
-            cvarela-usesi/php-multi-arch:7.4-loaders
+            gabriel0702usesi/php-multi-arch:7.4-loaders
             ghcr.io/cvarela-usesi/php-cli-loaders:7.4
             ghcr.io/cvarela-usesi/php-cli-loaders:latest
       -
@@ -58,7 +58,7 @@ jobs:
           platforms: linux/amd64,linux/arm64
           push: true
           tags: |
-            cvarela-usesi/php-multi-arch:7.4-fpm
+            gabriel0702usesi/php-multi-arch:7.4-fpm
             ghcr.io/cvarela-usesi/php-fpm:7.4
             ghcr.io/cvarela-usesi/php-fpm:latest
       -
@@ -69,6 +69,6 @@ jobs:
           platforms: linux/amd64,linux/arm64
           push: true
           tags: |
-            cvarela-usesi/php-multi-arch:7.4-fpm-loaders
+            gabriel0702usesi/php-multi-arch:7.4-fpm-loaders
             ghcr.io/cvarela-usesi/php-fpm-loaders:7.4
             ghcr.io/cvarela-usesi/php-fpm-loaders:latest
