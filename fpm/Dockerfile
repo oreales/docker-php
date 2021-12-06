@@ -16,7 +16,7 @@ ARG PHP_EXTENSIONS="amqp bcmath gd gmp imagick intl msgpack opcache pdo_mysql re
 RUN chmod +x /usr/local/bin/install-php-extensions && sync \
 	&& install-php-extensions ${PHP_EXTENSIONS} \
 	&& apt update -y \
-	&& apt install -y git npm gettext unzip pwgen nmap ncat jq
+	&& apt install -y git npm gettext unzip pwgen nmap jq
 
 # Set primary INI file and PHP memory limit
 RUN set -eux \
