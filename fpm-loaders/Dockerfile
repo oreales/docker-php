@@ -6,7 +6,7 @@ RUN OS_ARCH=$(uname -m) \
     && PHP_VERSION=$(php -v | head -n1 | cut -d' ' -f2 | cut -d. -f1-2) \
     && mkdir -p /tmp/sourceguardian \
     && cd /tmp/sourceguardian \
-    && if [[ ${OS_ARCH} != "armv7l" ]]; then \
+    && if [ ${OS_ARCH} != "armv7l" ]; then \
         curl -kO https://www.sourceguardian.com/loaders/download/loaders.linux-x86_64.tar.gz \
         && tar xzf loaders.linux-x86_64.tar.gz; \
     else \
@@ -14,7 +14,7 @@ RUN OS_ARCH=$(uname -m) \
         && tar xzf loaders.linux-armhf.tar.gz; \
     fi \
     && SOURCEGUARDIAN_LOADER_PATH=ixed.${PHP_VERSION}.lin \
-    && if [[ -f ${SOURCEGUARDIAN_LOADER_PATH} ]]; then \
+    && if [ -f ${SOURCEGUARDIAN_LOADER_PATH} ]; then \
         cp ${SOURCEGUARDIAN_LOADER_PATH} "$(php -i | grep '^extension_dir =' | cut -d' ' -f3)/sourceguardian.so" \
             && echo "extension=sourceguardian.so" > /usr/local/etc/php/conf.d/15-sourceguardian.ini; \
     else \
@@ -28,7 +28,7 @@ RUN OS_ARCH=$(uname -m) \
     && PHP_VERSION=$(php -v | head -n1 | cut -d' ' -f2 | cut -d. -f1-2) \
     && mkdir -p /tmp/ioncube \
     && cd /tmp/ioncube \
-    && if [[ ${OS_ARCH} != "armv7l" ]]; then \
+    && if [ ${OS_ARCH} != "armv7l" ]; then \
         curl -kO https://downloads.ioncube.com/loader_downloads/ioncube_loaders_lin_x86-64.tar.gz \
         && tar xzf ioncube_loaders_lin_x86-64.tar.gz; \
     else \
@@ -36,7 +36,7 @@ RUN OS_ARCH=$(uname -m) \
         && tar xzf ioncube_loaders_lin_armv7l.tar.gz; \
     fi \
     && IONCUBE_LOADER_PATH=ioncube/ioncube_loader_lin_${PHP_VERSION}.so \
-    && if [[ -f ${IONCUBE_LOADER_PATH} ]]; then \
+    && if [ -f ${IONCUBE_LOADER_PATH} ]; then \
         cp ${IONCUBE_LOADER_PATH} "$(php -i | grep '^extension_dir =' | cut -d' ' -f3)/ioncube_loader.so" \
             && echo "zend_extension=ioncube_loader.so" > /usr/local/etc/php/conf.d/01-ioncube-loader.ini; \
     else \
