@@ -1,9 +1,6 @@
 ARG PHP_TAG
 FROM ghcr.io/cvarela-usesi/php-fpm:${PHP_TAG}
 
-RUN apt update -y \
-    && apt upgrade -y
-
 # Install and enable SourceGuardian and ionCube loaders
 RUN OS_ARCH=$(uname -m) \
     && PHP_VERSION=$(php -v | head -n1 | cut -d' ' -f2 | cut -d. -f1-2) \
