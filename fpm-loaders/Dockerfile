@@ -10,10 +10,10 @@ RUN OS_ARCH=$(uname -m) \
     && mkdir -p /tmp/sourceguardian \
     && cd /tmp/sourceguardian \
     && if [[ ${OS_ARCH} != "armv7l" ]]; then \
-        curl -kOs https://www.sourceguardian.com/loaders/download/loaders.linux-x86_64.tar.gz \
+        curl -kO https://www.sourceguardian.com/loaders/download/loaders.linux-x86_64.tar.gz \
         && tar xzf loaders.linux-x86_64.tar.gz; \
     else \
-        curl -kOs https://www.sourceguardian.com/loaders/download/loaders.linux-armhf.tar.gz \
+        curl -kO https://www.sourceguardian.com/loaders/download/loaders.linux-armhf.tar.gz \
         && tar xzf loaders.linux-armhf.tar.gz; \
     fi \
     && SOURCEGUARDIAN_LOADER_PATH=ixed.${PHP_VERSION}.lin \
@@ -32,10 +32,10 @@ RUN OS_ARCH=$(uname -m) \
     && mkdir -p /tmp/ioncube \
     && cd /tmp/ioncube \
     && if [[ ${OS_ARCH} != "armv7l" ]]; then \
-        curl -kOs https://downloads.ioncube.com/loader_downloads/ioncube_loaders_lin_x86-64.tar.gz \
+        curl -kO https://downloads.ioncube.com/loader_downloads/ioncube_loaders_lin_x86-64.tar.gz \
         && tar xzf ioncube_loaders_lin_x86-64.tar.gz; \
     else \
-        curl -kOs https://downloads.ioncube.com/loader_downloads/ioncube_loaders_lin_armv7l.tar.gz \
+        curl -kO https://downloads.ioncube.com/loader_downloads/ioncube_loaders_lin_armv7l.tar.gz \
         && tar xzf ioncube_loaders_lin_armv7l.tar.gz; \
     fi \
     && IONCUBE_LOADER_PATH=ioncube/ioncube_loader_lin_${PHP_VERSION}.so \
