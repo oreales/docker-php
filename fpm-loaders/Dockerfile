@@ -1,5 +1,5 @@
 ARG PHP_TAG
-FROM ghcr.io/cvarela-usesi/php-fpm:${PHP_TAG}
+FROM ghcr.io/oreales/php-fpm:${PHP_TAG}
 
 # Install and enable SourceGuardian and ionCube loaders
 RUN OS_ARCH=$(uname -m) \

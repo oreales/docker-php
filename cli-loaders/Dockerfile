@@ -1,4 +1,4 @@
-FROM ghcr.io/cvarela-usesi/php-cli
+FROM ghcr.io/oreales/php-cli
 
 ARG TARGETARCH
 

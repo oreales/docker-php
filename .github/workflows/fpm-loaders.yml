@@ -48,5 +48,5 @@ jobs:
           build-args: |
             PHP_TAG=${{ github.event.inputs.from }}
           tags: |
-            ghcr.io/cvarela-usesi/php-fpm-loaders:${{ github.event.inputs.to }}
-            ghcr.io/cvarela-usesi/php-fpm-loaders:latest
+            ghcr.io/oreales/php-fpm-loaders:${{ github.event.inputs.to }}
+            ghcr.io/oreales/php-fpm-loaders:latest

@@ -37,8 +37,8 @@ jobs:
           push: true
           tags: |
             gabriel0702usesi/php-multi-arch:7.4
-            ghcr.io/cvarela-usesi/php-cli:7.4
-            ghcr.io/cvarela-usesi/php-cli:latest
+            ghcr.io/oreales/php-cli:7.4
+            ghcr.io/oreales/php-cli:latest
       -
         name: Build and push PHP CLI with Loaders
         uses: docker/build-push-action@v2
@@ -48,8 +48,8 @@ jobs:
           push: true
           tags: |
             gabriel0702usesi/php-multi-arch:7.4-loaders
-            ghcr.io/cvarela-usesi/php-cli-loaders:7.4
-            ghcr.io/cvarela-usesi/php-cli-loaders:latest
+            ghcr.io/oreales/php-cli-loaders:7.4
+            ghcr.io/oreales/php-cli-loaders:latest
       -
         name: Build and push PHP FPM
         uses: docker/build-push-action@v2
@@ -61,8 +61,8 @@ jobs:
             PHP_TAG=7.4
           tags: |
             gabriel0702usesi/php-multi-arch:7.4-fpm
-            ghcr.io/cvarela-usesi/php-fpm:7.4
-            ghcr.io/cvarela-usesi/php-fpm:latest
+            ghcr.io/oreales/php-fpm:7.4
+            ghcr.io/oreales/php-fpm:latest
       -
         name: Build and push PHP FPM with Loaders
         uses: docker/build-push-action@v2
@@ -74,5 +74,5 @@ jobs:
             PHP_TAG=7.4
           tags: |
             gabriel0702usesi/php-multi-arch:7.4-fpm-loaders
-            ghcr.io/cvarela-usesi/php-fpm-loaders:7.4
-            ghcr.io/cvarela-usesi/php-fpm-loaders:latest
+            ghcr.io/oreales/php-fpm-loaders:7.4
+            ghcr.io/oreales/php-fpm-loaders:latest

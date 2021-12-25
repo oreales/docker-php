@@ -37,5 +37,5 @@ jobs:
           push: true
           tags: |
             gabriel0702usesi/php-multi-arch:7.4-loaders
-            ghcr.io/cvarela-usesi/php-cli-loaders:7.4
-            ghcr.io/cvarela-usesi/php-cli-loaders:latest
+            ghcr.io/oreales/php-cli-loaders:7.4
+            ghcr.io/oreales/php-cli-loaders:latest
