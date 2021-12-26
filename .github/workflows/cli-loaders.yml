@@ -36,6 +36,6 @@ jobs:
           platforms: linux/amd64,linux/arm64
           push: true
           tags: |
-            gabriel0702usesi/php-multi-arch:7.4-loaders
+            oreales/php-multi-arch:7.4-loaders
             ghcr.io/oreales/php-cli-loaders:7.4
             ghcr.io/oreales/php-cli-loaders:latest
